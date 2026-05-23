@@ -1,0 +1,123 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "mySdk",
+    "printedName": "mySdk",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "MySdk",
+        "printedName": "MySdk",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MySdk",
+                "printedName": "mySdk.MySdk",
+                "usr": "s:5mySdk02MyB0C"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5mySdk02MyB0C6sharedACvpZ",
+            "mangledName": "$s5mySdk02MyB0C6sharedACvpZ",
+            "moduleName": "mySdk",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MySdk",
+                    "printedName": "mySdk.MySdk",
+                    "usr": "s:5mySdk02MyB0C"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5mySdk02MyB0C6sharedACvgZ",
+                "mangledName": "$s5mySdk02MyB0C6sharedACvgZ",
+                "moduleName": "mySdk",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "greet",
+            "printedName": "greet(name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5mySdk02MyB0C5greet4nameS2S_tF",
+            "mangledName": "$s5mySdk02MyB0C5greet4nameS2S_tF",
+            "moduleName": "mySdk",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5mySdk02MyB0C",
+        "mangledName": "$s5mySdk02MyB0C",
+        "moduleName": "mySdk",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

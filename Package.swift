@@ -12,7 +12,7 @@ let package = Package(
         .binaryTarget(
             name: "MySDK",
             url: "https://github.com/maaztausif/MySDK/releases/download/1.0.0/MySDK.xcframework.zip",
-            checksum: "YOUR_CHECKSUM_HERE"
+            checksum: "8fe782181a4993aa77a0a5f0a19841268e54877810e0df89785d0bc06748ed17"
         )
     ]
 )
