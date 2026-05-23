@@ -9,6 +9,10 @@ let package = Package(
         .library(name: "MySDK", targets: ["MySDK"])
     ],
     targets: [
-        .binaryTarget(name: "MySDK", path: "./MySDK.xcframework")
+        .binaryTarget(
+            name: "MySDK",
+            url: "https://github.com/maaztausif/MySDK/releases/download/1.0.0/MySDK.xcframework.zip",
+            checksum: "YOUR_CHECKSUM_HERE"
+        )
     ]
 )
