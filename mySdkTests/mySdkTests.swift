@@ -6,12 +6,18 @@
 //
 
 import Testing
+import XCTest
 @testable import mySdk
 
-struct mySdkTests {
+final class MySDKTests: XCTestCase {
 
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    func test_greet_withValidName_returnsCorrectMessage() {
+        let result = MySdk.shared.greet(name: "Maaz")
+        XCTAssertEqual(result, "Hello, Maaz! Welcome to MySDK.")
     }
-
+    
+    func test_greet_withEmptyName_returnsDefaultMessage() {
+        let result = MySdk.shared.greet(name: "")
+        XCTAssertEqual(result, "Hello, stranger!")
+    }
 }
