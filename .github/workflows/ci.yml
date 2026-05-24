@@ -1,0 +1,24 @@
+name: MySDK CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Build & Test
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Tests
+        run: |
+          xcodebuild test \
+            -scheme mySdk \
+            -destination "platform=iOS Simulator,OS=17.0,name=iPhone 15" \
+            -enableCodeCoverage YES \
+            CODE_SIGNING_ALLOWED=NO
